@@ -1,0 +1,67 @@
+*,
+*::after,
+*::before {
+  font-family: "DM Sans", sans-serif;
+}
+
+body {
+  min-width: 24rem;
+  overflow: initial;
+}
+
+#main-container {
+  height: 31.5rem;
+}
+
+@media screen and (min-width: 640px) {
+  #main-container {
+    height: 45rem;
+  }
+}
+
+#select::before {
+  content: "";
+  position: absolute;
+  height: 27px;
+  width: 22px;
+  background-image: url("https://www.svgrepo.com/show/10493/globe-grid.svg");
+  background-size: 13px 13px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  left: 0.18rem;
+  filter: contrast(0);
+}
+
+@media screen and (min-width: 640px) {
+  #select::before {
+    top: 0.34rem;
+    left: 0.20rem;
+  }
+}
+
+#button-iniciar-sesion,
+#button-comenzar {
+  box-shadow: 0px 0px 3px black;
+}
+
+#button-comenzar::after {
+  content: "\1433";
+  font-size: 0.7rem;
+  position: absolute;
+  height: 1.5rem;
+  width: 1.5rem;
+  translate: 0.1rem 0.23rem;
+}
+
+#input-email {
+  max-width: 31.25rem;
+}
+/* 
+#label-email {
+  top: 0.625rem;
+  left: 0.75rem;
+} */
+
+#main-second {
+  height: 28rem;
+}

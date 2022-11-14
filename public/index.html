@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Faka.TV</title>
+  </head>
+
+  <body>
+    <div class="bg-neutral-800">
+      <div class="h-4 bg-black sm:hidden"></div>
+      <nav
+        class="bg-[url('../media/index-bg.jpg')] bg-cover"
+        id="main-container"
+      >
+        <div
+          class="h-full bg-gradient-to-b from-black/60 to-black/90 sm:from-black/90 sm:via-black/60 sm:to-black/90"
+        >
+          <div
+            class="h-fit pt-3 px-5 flex flex-row justify-between items-center bg-gradient-to-b from-black via-black/60 sm:bg-none sm:pt-7 sm:px-11"
+          >
+            <figure class="h-full self-start">
+              <img
+                src="../media/logo faka.png"
+                class="h-6 sm:h-8"
+                alt="logo-faka-tv"
+              />
+            </figure>
+            <div class="flex align-middle">
+              <div class="relative" id="select">
+                <select
+                  name="language"
+                  id="language"
+                  class="pl-5 p-0.5 mr-3 text-sm border rounded-sm border-slate-100 text-neutral-900 bg-transparent/40 dark:text-slate-100 dark:border-l-slate-100 sm:py-1.5 sm:text-base sm:tracking-tight"
+                >
+                  <option value="spanish">Español</option>
+                  <option value="english">English</option>
+                </select>
+              </div>
+              <button
+                type="button"
+                id="button-iniciar-sesion"
+                class="px-2 py-0.5 text-sm text-white rounded-sm bg-red-600 sm:text-base sm:px-4 sm:ml-3"
+              >
+                Iniciar sesión
+              </button>
+            </div>
+          </div>
+          <div class="mt-16 pt-2 sm:mx-11 sm:mt-32" id="main-first">
+            <div
+              class="max-w-md self-center m-auto sm:max-w-none"
+              id="main-first-text"
+            >
+              <h1
+                class="mx-4 text-center leading-8 text-slate-100 text-3xl font-semibold tracking-tight sm:text-5xl sm:mx-0 sm:leading-tight"
+              >
+                Películas y series ilimitadas y mucho más
+              </h1>
+              <h2
+                class="mx-8 mt-4 text-center leading-6 text-slate-100 text-lg tracking-tight sm:text-2xl sm:tracking-normal sm:mx-0"
+              >
+                Disfruta donde quieras. Cancela cuando quieras.
+              </h2>
+              <h2
+                class="mx-8 mt-4 text-center leading-6 text-slate-100 text-lg tracking-tight sm:leading-5 sm:text-xl sm:mx-0"
+              >
+                ¿Quieres ver Faka.TV ya? Ingresa tu <br />
+                email para crear una cuenta o reiniciar tu membresía de Faka.TV
+              </h2>
+            </div>
+            <form
+              action=""
+              class="mx-5 mt-3 flex flex-col items-center"
+              id="form-comenzar"
+            >
+              <div class="relative w-full mb-4 flex bg-center">
+                <input
+                  type="text"
+                  id="input-email"
+                  placeholder="Email"
+                  class="px-3 py-2.5 w-full m-auto rounded-sm border-solid border-neutral-900 focus:outline focus:outline-1 focus:outline-offset-0 focus:outline-blue-400"
+                />
+
+                <!-- acomodar el label para que se genere una transition cuando haya focus sobre el input (con JS?) -->
+              </div>
+
+              <button
+                type="submit"
+                id="button-comenzar"
+                class="pl-4 pr-8 py-2 w-fit rounded-sm text-slate-100 bg-red-600"
+              >
+                Comenzar
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="h-2"></div>
+      <div class="bg-black" id="main-second">HOLA</div>
+    </div>
+  </body>
+</html>
