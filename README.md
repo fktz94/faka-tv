@@ -1,2 +1,2 @@
 # faka-tv
- clon de netflix
+ ejercicios para practicar el uso de tailwind
